@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
+        
        Fish pike = new Fish();
        Fish crucian = new Fish(true, false, false, 4);
        Fish carp  = new Fish(true, false, false, 2, true);
@@ -14,6 +15,7 @@ public class Main {
         carp.printSum();
 
         Fish.setTotalWeight(pike.getWeight() + crucian.getWeight() + carp.getWeight());
+        
         Fish.printStaticSum();
     }
 }
